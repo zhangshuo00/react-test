@@ -7,7 +7,7 @@ const CustomItem: React.FC = () => {
   const [form] = Form.useForm();
 
   useEffect(() => {
-    form.setFieldsValue({ name: 'zhangsan', thirdModelUrl: ['aaa'] });
+    form.setFieldsValue({ name: 'zhangsan', thirdModelUrl: ['macOS'] });
   }, [])
 
   const onFinish = (values) => {
@@ -36,7 +36,7 @@ const CustomItem: React.FC = () => {
           <Input/>
         </Form.Item>
         <Form.Item
-          label='功能卖点'
+          label='标签'
           name='thirdModelUrl'
           rules={[
             {
